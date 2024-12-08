@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            app:fabSize="normal"
+            android:src="@drawable/baseline_task_24"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="titre de la description"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="20dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_mode_edit_24"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="280dp"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_restore_from_trash_24"
+            android:layout_marginTop="88dp"
+            android:layout_marginLeft="280dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
